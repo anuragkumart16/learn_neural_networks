@@ -50,6 +50,7 @@ class Perceptron:
         return (output,self.get_attributes())
 
     def predict(self,inputs):
+        print("Predicting for ",inputs)
         weighted_sum =  self.calulate_weighted_sum(inputs)
         output = self.activation_function(weighted_sum)
         return (output,self.get_attributes())
