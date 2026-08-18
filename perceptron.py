@@ -47,7 +47,7 @@ class Perceptron:
 
         # update bias
         self.bias += error*self.learning_rate
-        return (output,self.get_attributes())
+        return (inputs,f"output {output}",self.get_attributes())
 
     def predict(self,inputs):
         print("Predicting for ",inputs)
